@@ -1,0 +1,21 @@
+.read-more{
+  display: flex;
+}
+.read-more__btn-expand{
+  height: 24px;
+  width: 24px;
+  background: url("../img/expand.png") no-repeat;
+  margin-right: 8px;
+  margin-left: 16px;
+}
+.read-more__text{
+  height: 24px;
+  font-family:"TT Lakes medium", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+@media (min-width: 768px){
+  .read-more__btn-expand{
+    margin-left: 0px;
+  }
+}

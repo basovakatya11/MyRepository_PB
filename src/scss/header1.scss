@@ -1,0 +1,23 @@
+.header1{
+  height: 80px;
+  background-image: linear-gradient(to right, #f2f2f2, #ffffff);
+  position: relative;
+  border-top: 2px solid #D9FFF5;
+  margin-top: 24px;
+}
+.title{
+  position: absolute;
+  height: 48px;
+  left: 16px;
+  top: 16px;
+  font-weight: 400;
+
+  font-family: 'TT Lakes regular', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  color: #7E7E82;
+}

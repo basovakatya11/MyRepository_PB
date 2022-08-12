@@ -1,0 +1,44 @@
+.table-info{
+  margin: 24px;
+  font-family: 'TT Lakes medium', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+	letter-spacing: 0.2px;
+  color: #1B1C21;
+  width: 90%;
+  box-sizing:border-box;
+  border-collapse:collapse;
+  
+  td{
+    padding: 24px 0;
+    border-bottom: 1px solid #EAEAEA;
+  }
+  
+  td:last-child{
+    width: 125px;
+  }
+  
+  tr:last-child td{
+    border-bottom: none;
+  }
+  
+  th{
+    padding: 24px 0;
+    color:#7E7E82;
+    font-weight: normal;
+    text-align: left;
+  }
+  tr:first-child th{
+    padding-left: 15px;
+  } 
+    
+  tbody{
+    background-color: white;
+    border-right: 16px solid white;
+    border-left: 16px solid white;
+    border-radius: 6px;
+  }
+  .btn-to-order{
+    position: static;
+  }
+}

@@ -1,0 +1,148 @@
+%btn-shared{
+  background: #FF3E79 no-repeat;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.upper-menu__logo-group,
+.upper-menu__btn-group{
+  display: flex;
+  align-items: center;
+}
+
+.upper-menu{
+  display: flex;
+  height: 88px;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.upper-menu__btn-burger{
+  @extend %btn-shared;
+  background-image: url('../img/burger.png');
+  margin-left:16px;
+}
+
+.upper-menu__logo{
+  width: 96.55px;
+  height: 50.81px;
+  background: white url('../img/Group.png') no-repeat;
+  margin:16.73px;
+}
+
+.upper-menu__btn-call{
+  @extend %btn-shared;
+  background-image: url('../img/call.png');
+  // margin-left:250.7px;
+}
+
+.upper-menu__btn-call--disabled{
+  display: none;
+}
+
+.upper-menu__btn-chat{
+  @extend %btn-shared;
+  background-image: url('../img/chat.png');
+  margin-left:16px;
+}
+
+.upper-menu__btn-chat--disabled{
+  display: none;
+}
+
+.upper-menu__btn-profile{
+  @extend %btn-shared;
+  background-image: url('../img/profile.png');
+  margin-left:16px;
+  margin-right: 20px;
+}
+
+.upper-menu__btn-profile--disabled{
+  display: none;
+}
+
+.upper-menu__divider{
+  width: 2px;
+  height: 32px;
+  background-color:#EAEAEA;
+  margin-right: 20px;
+}
+
+.upper-menu__btn-repair{
+  background: url('../img/repair.png');
+  @extend %btn-shared;
+}
+
+.upper-menu__btn-checkstatus{
+  @extend %btn-shared;
+  background-image: url('../img/checkstatus.png');
+  margin: 16px;
+  margin-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .upper-menu__btn-burger{
+    margin-left: 24px;
+  }
+  .wrapper-btn-burger{
+    display: flex;
+    align-items: center;
+  }
+  .wrapper-btn-burger::after{
+    content:"";
+    width: 2px;
+    height: 32px;
+    background-color:#EAEAEA;
+    margin-left: 20px;
+  }
+  .upper-menu__logo{
+    margin-left: 20.73px;
+  }
+  .upper-menu__btn-call,
+  .upper-menu__btn-chat,
+  .upper-menu__btn-profile{
+    display:block;
+  }
+}
+
+@media (min-width: 1440px){
+  .wrapper-btn-burger,
+  .upper-menu__logo--disabled,
+  .upper-menu__btn-call--disabled,
+  .upper-menu__btn-chat--disabled,
+  .upper-menu__btn-profile--disabled,
+  .upper-menu__divider--disabled{
+    display: none;
+  }
+  .upper-menu__btn-checkstatus{
+    margin: 0;
+  }
+  .wrapper-btn-repair{
+    display:flex;
+    align-items: center;
+  }
+  .wrapper-btn-repair::before{
+    content:"Оставить заявку";
+    margin-right: 8px;
+    font-family: "TT Lakes medium", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#1B1C21;
+    letter-spacing: -0.2px;
+  }
+  .wrapper-btn-checkstatus{
+    display:flex;
+    align-items: center;
+  }
+  .wrapper-btn-checkstatus::before{
+    content:"Статус ремонта";
+    margin-right: 8px;
+    margin-left: 32px;
+    font-family: "TT Lakes medium", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color:#1B1C21;
+    letter-spacing: -0.2px;
+  }
+}

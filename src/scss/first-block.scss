@@ -1,0 +1,53 @@
+.first-block__text1,
+.first-block__text2{
+  font-family: "TT Lakes regular", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 16px;
+  color: #1B1C21;
+}
+.first-block__text2--disabled{
+  display:none;
+}
+
+.first-block__read-more{
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px){
+  .first-block{
+    display: flex;
+    margin: 0px 25px 40px 24px;
+  }
+  .first-block__picture img{
+    width:360px;
+    height:208px;
+    border-radius: 6px;
+
+  }
+  .first-block__text1{
+    margin: 0px 48px 25px 0px;
+  }
+  .first-block__text2{
+    display: block;
+    margin: 25px 48px 10px 0px;
+  }
+  
+  .first-block__read-more{
+    margin-top: 10px;
+      
+  }
+}
+
+@media (min-width: 1120px){
+  .first-block__picture img{
+    width: 531px;
+    height: 307px;
+  }
+  .first-block{
+    margin: 0 29px 49px 35px;
+  }
+
+  .first-block__text2::after{
+    content:", что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.";
+  }
+}

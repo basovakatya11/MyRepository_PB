@@ -1,0 +1,48 @@
+.card{
+  width: 260px;
+  height: 200px;
+  border-radius: 6px;
+  position: relative;
+  padding: 8px;
+  background-color: #ffffff;
+  font-family: 'TT Lakes regular', Arial, Helvetica, sans-serif;
+  margin-right: 25px;
+}
+
+.group1,
+.group2,
+.group3{
+  padding: 8px;
+}
+
+.card__title{
+  color: #7E7E82;
+}
+
+.btn-to-order{
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  background: #FF3E79;
+  border-radius: 16px;
+  display: flex;
+  color: white;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 119px;
+  height: 32px;
+  border: none;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.btn-to-order__text{
+  transform: translate(6px, 2px);
+}
+.btn-img{
+  transform: translateY(2px);
+}

@@ -1,0 +1,18 @@
+.slide-menu button{
+  font-family: 'TT Lakes medium', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #7E7E82;
+  box-sizing: border-box;
+  height: 40px;
+  flex-shrink: 0;
+  background-color: #F8F8F8;
+  border: 2px solid #F8F8F8;
+  padding: 8px 9px 8px 16px;
+  cursor: pointer;
+}
+
+.slide-menu button:hover,
+.slide-menu .slide-menu__button--highlighted{
+  background-color: white;
+  border: 2px solid #B8FFEC;
+}
