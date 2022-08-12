@@ -84,11 +84,17 @@ expandButton2.addEventListener('click', function () {
 
 // Механизм появления/скрытия модалки "Обратная связь"
 var buttonMessage = document.querySelector('.upper-menu__btn-chat');
+var buttonMessage1 = document.querySelector('.btn-chat');
 var modalFeedback = document.querySelector('#modal1');
 var buttonCloseModal1 = modalFeedback.querySelector('.modal__btn-close');
 var modalOverlay = document.querySelector('.hystmodal__shadow');
 
 buttonMessage.addEventListener('click', function() {
+  modalFeedback.classList.remove('hystmodal--hidden');
+  modalOverlay.classList.remove('hystmodal__shadow--hidden');
+  
+});
+buttonMessage1.addEventListener('click', function() {
   modalFeedback.classList.remove('hystmodal--hidden');
   modalOverlay.classList.remove('hystmodal__shadow--hidden');
   
@@ -101,10 +107,16 @@ buttonCloseModal1.addEventListener('click', function () {
 
 //Механизм появления/скрытия модалки "Заказать звонок"
 var buttonCall = document.querySelector('.upper-menu__btn-call');
+var buttonCall1 = document.querySelector('.btn-call');
 var modalCall = document.querySelector('#modal2');
 var buttonCloseModal2 = modalCall.querySelector('.modal__btn-close');
 
 buttonCall.addEventListener('click', function() {
+  modalCall.classList.remove('hystmodal--hidden');
+  modalOverlay.classList.remove('hystmodal__shadow--hidden');
+  
+});
+buttonCall1.addEventListener('click', function() {
   modalCall.classList.remove('hystmodal--hidden');
   modalOverlay.classList.remove('hystmodal__shadow--hidden');
   
